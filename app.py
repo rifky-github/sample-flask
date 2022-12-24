@@ -15,15 +15,15 @@ def hello_world():
 
 @app.route("/profile", methods=['POST'])
 def profile():
-	print('omg')
-
+	
 	url = url_vip
 	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1)'}
 
-	key_vip = request.form['key_vip']
-	id_vip = request.form['id_vip']
-	print('omg2')
+	key_and_id_vip = request.get_json('key_vip')
 
+	id_vip = key_and_id_vip['id_vip']
+	key_vip = key_and_id_vip['key_vip']
+	
 	sign_vip = id_vip+key_vip
 	sign_vip = hashlib.md5(sign_vip.encode('utf-8')).hexdigest()
 
