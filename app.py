@@ -4,7 +4,7 @@ import hashlib
 import requests
 import os
 
-url_vip = os.environ['URL_VIP']
+url_vip = os.getenv("URL_VIP")
 
 app = Flask(__name__)
 
