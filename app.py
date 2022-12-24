@@ -2,6 +2,9 @@ from flask import Flask, request
 from flask import render_template
 import hashlib
 import requests
+import os
+
+url_vip = os.environ['URL_VIP']
 
 app = Flask(__name__)
 
@@ -14,7 +17,7 @@ def hello_world():
 def profile():
 	print('omg')
 
-	url = "https://vip-reseller.co.id/api/profile"
+	url = url_vip
 	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1)'}
 
 	key_vip = request.form['key_vip']
