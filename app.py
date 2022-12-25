@@ -36,4 +36,4 @@ def profile():
 	falseortrue_result = falseortrue['data']
 	result1 = json.dumps(falseortrue_result)
 	result = json.loads(result1)
-	return str(result), 201
+	return result, 201
