@@ -34,5 +34,8 @@ def profile():
 	r = requests.post(url,headers=headers, data=payload)
 	falseortrue = r.json()
 	falseortrue_result = falseortrue['data']
-# 	return str(json.dumps(falseortrue_result, indent=2)), 201
-	return falseortrue, 201
+	is_data_null = str(json.dumps(falseortrue_result, indent=2))
+	if is_data_null == "null":
+		return str(json.dumps(falseortrue['message'], indent=2)), 201
+
+	return str(json.dumps(falseortrue_result, indent=2)), 201
