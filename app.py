@@ -3,6 +3,7 @@ from flask import render_template
 import hashlib
 import requests
 import os
+import json
 
 url_vip = os.getenv("URL_VIP")
 
@@ -33,4 +34,4 @@ def profile():
 	r = requests.post(url,headers=headers, data=payload)
 	falseortrue = r.json()
 	falseortrue_result = falseortrue['data']
-	return falseortrue['data'], 201
+	return json.dumps(falseortrue_result), 201
