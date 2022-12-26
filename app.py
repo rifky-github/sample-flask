@@ -63,8 +63,7 @@ def test_button():
 				    "product": {
 				      "label": "T-shirt",
 				      "cost": 2250
-				    },
-				    "success_target": "My Content"
+				    }
 				  }
 				]
 			      }
