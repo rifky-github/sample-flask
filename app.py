@@ -47,7 +47,7 @@ def test_button():
 		"content": {
 		"type": "instagram",
 		"messages": [
-		  {
+		{
 		    "type": "text",
 		    "text": "Pilih Diamonds 😄",
 		    "buttons": {
