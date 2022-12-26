@@ -59,19 +59,14 @@ def test_button():
 			      {
 				"type": "node",
 				"caption": "18 💎 [Rp.20.000]",
-				"target": "mantap_jiwa2"
+				"target": "mantap_jiwa"
 			      },
 			      {
 				"type": "node",
 				"caption": "19 💎 [Rp.25.000]",
-				"target": "mantap_jiwa3"
+				"target": "mantap_jiwa"
 			      },
-			      {
-				"type": "node",
-				"caption": "20 💎 [Rp.30.000]",
-				"target": "mantap_jiwa4"
-			      }
-
+			      
 			    ]
 			  }
 			],
