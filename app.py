@@ -39,3 +39,39 @@ def profile():
 		return str(json.dumps(falseortrue['message'], indent=2)), 201
 
 	return str(json.dumps(falseortrue_result, indent=2)), 201
+
+@app.route("/test-button", methods=['POST'])
+def test_button():
+	button = {
+			  "version": "v2",
+			  "content": {
+			    "type": "instagram",
+			    "messages": [
+			      {
+				"type": "text",
+				"text": "simple text with button",
+				"buttons": [
+				  {
+				    "type":    "buy",
+				    "caption": "Buy",
+				    "customer": {
+				      "shipping_address": "true",
+				      "contact_name": "false",
+				      "contact_phone": "true",
+				      "contact_email": "true"
+				    },
+				    "product": {
+				      "label": "T-shirt",
+				      "cost": 2250
+				    },
+				    "success_target": "My Content"
+				  }
+				]
+			      }
+			    ],
+			    "actions": [],
+			    "quick_replies": []
+			  }
+			}
+
+	return str(json.dumps(button, indent=2))
