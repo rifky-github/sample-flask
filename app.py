@@ -79,7 +79,6 @@ def test_button():
 				        "caption": "20 💎 [Rp.30.000]",
 				        "target": "mantap_jiwa"
 				      }
-
 				    ]
 				  }
 				],
