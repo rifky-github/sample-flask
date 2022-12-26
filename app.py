@@ -50,29 +50,37 @@ def test_button():
 			  {
 			    "type": "text",
 			    "text": "Pilih Diamonds 😄",
-			    "buttons": [
-			      {
-				"type": "node",
-				"caption": "17 💎 [Rp.17.000]",
-				"target": "mantap_jiwa"
-			      },
-			      {
-				"type": "node",
-				"caption": "18 💎 [Rp.20.000]",
-				"target": "mantap_jiwa"
-			      },
-			      {
-				"type": "node",
-				"caption": "19 💎 [Rp.25.000]",
-				"target": "mantap_jiwa"
-			      },
-			      
-			    ]
 			  }
 			],
 			"actions": [],
-			"quick_replies": []
-			}
+			"quick_replies": [
+			{
+			"type": "node",
+			"caption": "12 💎 [Rp20,000]",
+			"target": "mantap_jiwa"
+		    },
+			{
+			"type": "node",
+			"caption": "16 💎 [Rp20,000]",
+			"target": "mantap_jiwa"
+		    },
+		    {
+			"type": "node",
+			"caption": "18 💎 [Rp20,000]",
+			"target": "mantap_jiwa"
+		    },
+		    {
+			"type": "node",
+			"caption": "20 💎 [Rp20,000]",
+			"target": "mantap_jiwa"
+		    },
+		    {
+			"type": "node",
+			"caption": "22 💎 [Rp20,000]",
+			"target": "mantap_jiwa"
+		    },
+		]
 		}
+	}
 
 	return str(json.dumps(button, indent=2))
