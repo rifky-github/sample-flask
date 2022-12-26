@@ -110,7 +110,7 @@ def cek_idGame_ml():
 			"code":"mobile-legends",
 			"target":"{user_id}",
 			"additional_target":"{zone_id}"
-			}.format(user_id = user_id, zone_id = zone_id
+			}.format(user_id = user_id, zone_id = zone_id)
 	r = requests.post(url,headers=headers, data=payload)
 	falseortrue = r.json()
 	
@@ -130,7 +130,7 @@ def metode_pembayaran():
 			"messages": [
 			  {
 			    "type": "text",
-			    "text": macam_pembayaran,
+			    "text": {macam_pembayaran},
 			  }
 			],
 			"actions": [],
@@ -157,7 +157,7 @@ def metode_pembayaran():
 		    }
 		]
 		}
-	}
+	}.format(macam_pembayaran = macam_pembayaran)
 
 	return str(json.dumps(button, indent=2))
 
