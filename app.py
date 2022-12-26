@@ -43,48 +43,41 @@ def profile():
 @app.route("/test-button", methods=['POST'])
 def test_button():
 	button = {
-		"version": "v2",
-		"content": {
-		"type": "instagram",
-		"messages": [
-		{
-		    "type": "text",
-		    "text": "Pilih Diamonds 😄",
-		    "buttons": {
-				"version": "v2",
-				"content": {
-				"type": "instagram",
-				"messages": [
-				  {
-				    "type": "text",
-				    "text": "Pilih Diamonds 😄",
-				    "buttons": [
-				      {
-				        "type": "node",
-				        "caption": "17 💎 [Rp.17.000]",
-				        "target": "mantap_jiwa"
-				      },
-				      {
-				        "type": "node",
-				        "caption": "18 💎 [Rp.20.000]",
-				        "target": "mantap_jiwa"
-				      },
-				      {
-				        "type": "node",
-				        "caption": "19 💎 [Rp.25.000]",
-				        "target": "mantap_jiwa"
-				      },
-				      {
-				        "type": "node",
-				        "caption": "20 💎 [Rp.30.000]",
-				        "target": "mantap_jiwa"
-				      }
-				    ]
-				  }
-				],
-				"actions": [],
-				"quick_replies": []
-				}
+			"version": "v2",
+			"content": {
+			"type": "instagram",
+			"messages": [
+			  {
+			    "type": "text",
+			    "text": "Pilih Diamonds 😄",
+			    "buttons": [
+			      {
+				"type": "node",
+				"caption": "17 💎 [Rp.17.000]",
+				"target": "mantap_jiwa"
+			      },
+			      {
+				"type": "node",
+				"caption": "18 💎 [Rp.20.000]",
+				"target": "mantap_jiwa"
+			      },
+			      {
+				"type": "node",
+				"caption": "19 💎 [Rp.25.000]",
+				"target": "mantap_jiwa"
+			      },
+			      {
+				"type": "node",
+				"caption": "20 💎 [Rp.30.000]",
+				"target": "mantap_jiwa"
+			      }
+
+			    ]
+			  }
+			],
+			"actions": [],
+			"quick_replies": []
 			}
+		}
 
 	return str(json.dumps(button, indent=2))
