@@ -43,34 +43,26 @@ def profile():
 @app.route("/test-button", methods=['POST'])
 def test_button():
 	button = {
-			  "version": "v2",
-			  "content": {
-			    "type": "instagram",
-			    "messages": [
-			      {
-				"type": "text",
-				"text": "simple text with button",
-				"buttons": [
-				  {
-				    "type":    "buy",
-				    "caption": "Buy",
-				    "customer": {
-				      "shipping_address": "true",
-				      "contact_name": "false",
-				      "contact_phone": "true",
-				      "contact_email": "true"
-				    },
-				    "product": {
-				      "label": "T-shirt",
-				      "cost": 2250
-				    }
-				  }
-				]
-			      }
-			    ],
-			    "actions": [],
-			    "quick_replies": []
+		  "version": "v2",
+		  "content": {
+		    "type": "instagram",
+		    "messages": [
+		      {
+			"type": "text",
+			"text": "simple text with button",
+			"buttons": [
+			  {
+			    "type": "url",
+			    "caption": "External link",
+			    "url": "https://manychat.com",
 			  }
-			}
+			]
+		      }
+		    ],
+		    "actions": [],
+		    "quick_replies": []
+		  }
+		}
+
 
 	return str(json.dumps(button, indent=2))
