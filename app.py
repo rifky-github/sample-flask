@@ -111,7 +111,7 @@ def cek_idGame_ml():
 			"target":user_id,
 			"additional_target":zone_id
 			}
-	r = requests.post(url,headers=headers, data=payload)
+	r = requests.post(url_vip_game,headers=headers, data=payload)
 	falseortrue = r.json()
 	
 	return str(json.dumps(falseortrue, indent=2))
