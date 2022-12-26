@@ -108,9 +108,9 @@ def cek_idGame_ml():
 			"sign": sign_vip,
 			"type":"get-nickname",
 			"code":"mobile-legends"
-			"target":user_id,
-			"additional_target":zone_id
-			}
+			"target":{user_id},
+			"additional_target":{zone_id}
+			}.format(user_id = user_id, zone_id = zone_id
 	r = requests.post(url,headers=headers, data=payload)
 	falseortrue = r.json()
 	
