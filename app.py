@@ -53,23 +53,19 @@ def test_button():
 		    "buttons": [
 		      {
 			"type": "node",
-			"caption": "17 💎 [Rp.17.000]",
-			"target": "omg"
+			"caption": "17 💎 [Rp.17.000]"
 		      },
 		      {
 			"type": "node",
-			"caption": "18 💎 [Rp.20.000]",
-			"target": "omg"
+			"caption": "18 💎 [Rp.20.000]"
 		      },
 		      {
 			"type": "node",
-			"caption": "19 💎 [Rp.25.000]",
-			"target": "omg"
+			"caption": "19 💎 [Rp.25.000]"
 		      },
 		      {
 			"type": "node",
-			"caption": "20 💎 [Rp.30.000]",
-			"target": "omg"
+			"caption": "20 💎 [Rp.30.000]"
 		      }
 
 		    ]
