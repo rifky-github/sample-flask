@@ -107,7 +107,7 @@ def cek_idGame_ml():
 			"key":key_vip, 
 			"sign": sign_vip,
 			"type":"get-nickname",
-			"code":"mobile-legends"
+			"code":"mobile-legends",
 			"target":"{user_id}",
 			"additional_target":"{zone_id}"
 			}.format(user_id = user_id, zone_id = zone_id
