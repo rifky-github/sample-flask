@@ -52,9 +52,9 @@ def test_button():
 			"text": "simple text with button",
 			"buttons": [
 			  {
-			    "type": "url",
-			    "caption": "External link",
-			    "url": "https://manychat.com",
+			    "type": "node",
+			    "caption": "Show",
+			    "target": "omg"
 			  }
 			]
 		      }
